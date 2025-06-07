@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   generator: 'digital market',
 }
 
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
