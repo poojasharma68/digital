@@ -82,12 +82,15 @@ h6 {
 h1 {
   font-size: var(--font-size-5xl);
 }
+
 h2 {
   font-size: var(--font-size-4xl);
 }
+
 h3 {
   font-size: var(--font-size-3xl);
 }
+
 h4 {
   font-size: var(--font-size-2xl);
 }
@@ -122,8 +125,8 @@ h4 {
 
 .btn.secondary {
   background: transparent;
-       color: #aea2b4;
-    border: 2px solid #617a9e;
+  color: #aea2b4;
+  border: 2px solid #617a9e;
 }
 
 .btn.secondary:hover {
@@ -1007,12 +1010,14 @@ footer {
 
 .footer-content {
   display: flex;
-  gap: 80px;
+  gap: 80px !important;
 }
-.footer-links{
+
+.footer-links {
   display: flex;
   gap: 40px;
 }
+
 .footer-brand {
   max-width: 350px;
 }
@@ -1248,6 +1253,17 @@ footer {
     display: flex;
   }
 
+  .footer-content {
+    flex-direction: column;
+    gap: 40px !important;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
   nav {
     position: fixed;
     top: var(--header-height);
@@ -1411,6 +1427,7 @@ footer {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1418,10 +1435,12 @@ footer {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -1452,6 +1471,7 @@ select:focus {
 
 /* Print styles */
 @media print {
+
   header,
   .cta-buttons,
   .menu-toggle,
